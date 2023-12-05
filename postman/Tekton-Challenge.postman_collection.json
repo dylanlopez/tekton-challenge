@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "738d5b8f-bb43-46cc-b42a-041edc07d088",
+		"name": "Tekton-Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4648643"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7231/api/v1/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7231",
+					"path": [
+						"api",
+						"v1",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product/{idProduct}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7231/api/v1/Product/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7231",
+					"path": [
+						"api",
+						"v1",
+						"Product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ventilador de Pie\",\r\n  \"stock\": 5,\r\n  \"description\": \"\",\r\n  \"price\": 200,\r\n  \"discount\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7231/api/v1/Product/create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7231",
+					"path": [
+						"api",
+						"v1",
+						"Product",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productId\": 8,\r\n  \"name\": \"Ventilador de Pie\",\r\n  \"statusId\": 1,\r\n  \"stock\": 6,\r\n  \"description\": \"Descripcion Modificada x1\",\r\n  \"price\": 200,\r\n  \"discount\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7231/api/v1/Product/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7231",
+					"path": [
+						"api",
+						"v1",
+						"Product",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productId\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7231/api/v1/Product/delete",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7231",
+					"path": [
+						"api",
+						"v1",
+						"Product",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product/update-stock",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productId\": 8,\r\n  \"stock\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7231/api/v1/Product/update-stock",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7231",
+					"path": [
+						"api",
+						"v1",
+						"Product",
+						"update-stock"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
